@@ -8,7 +8,7 @@
 * 문제정의<br>
 손에 부착된 센서의 데이터를 통해 총 4개의 종류의 손동작을 분류
 
-## **3. 사용 스택 **
+## **3. 사용 스택**
 * Google Colab, Python, Pandas, Numpy, Scikit-learn, Keras, Matplotlib
   
 ## **4. 프로젝트 내용 요약**
@@ -104,7 +104,7 @@
     
     → K-fold 15 설정 모델(0.899), Flatten 추가한 모델(0.899), epoch수 다르게한 것(0.898) 이용 >> 0.901로 성능 향상
 
-## **5. 성능 향상 부분 **
+## **5. 성능 향상 부분**
 * 이상치가 많아서 이상치를 조정해 주기 위해 RobustScaler를 사용하게 되었습니다.
 * 기존 CNN 코드에서 층 수를 줄였습니다.
 * 활성화함수는 Relu로 설정하고, Maxpooling을 제거하고, Flatten을 추가해주었습니다. >> cnn size가 너무 작아서 MaxPooling을 제거
