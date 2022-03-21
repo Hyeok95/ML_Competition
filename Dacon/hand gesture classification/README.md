@@ -20,10 +20,6 @@
     - target이 0,123인 Multiclass이므로 **one-hot 인코딩**을 취해줌.
     - 이상치가 많이 존재하여 **RobustScaler**를 사용하여 이상치를 줄여줌.
         
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/66d8eebc-2d13-4eca-8bc5-0928de3a4446/Untitled.png)
-        
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d8936dad-7211-4800-b13b-c410201a82c5/Untitled.png)
-        
 2. Model을 선택하여 최적의 Model 선택
     
     >> 층을 쌓고, 코드를 간편화하기 위해 **Keras를 사용**
@@ -35,10 +31,7 @@
     - GRU : 0.82
 3. Cnn model HyperParameter 튜닝
     - Learning_rate를 0.4 → 0.004로 조정 (0.885) >> 높은 성능 향상
-    - 층은 깊게하고 파라미터 수는 줄이게 하려고 1*1 conv를  추가(0.89)
-        
-        >> 성능 향상
-        
+    - 층은 깊게하고 파라미터 수는 줄이게 하려고 1*1 conv를  추가(0.89) >> 성능 향상
     - activation 함수를 relu로 설정하고, Maxpooling 제거 (0.895) >> 성능 향상
     - K-fold를 10 → 15로 설정 (0.898~0.899)>> 성능 향상
     - Flatten 추가 (0.899) >> 성능 조금 향상
