@@ -14,11 +14,11 @@
     
 4. 모델의 활성화 함수와 학습률, 층수를 조정하여 튜닝작업을 함.
   * 모델 코드
-        ```python
-        ohe = OneHotEncoder(sparse = False)
-        skf = StratifiedKFold(n_splits = 15, random_state = 42, shuffle = True)
-        es = EarlyStopping(monitor = 'val_acc', patience = 5, mode = 'max', verbose = 0)
-        ```
+```python
+ohe = OneHotEncoder(sparse = False)
+skf = StratifiedKFold(n_splits = 15, random_state = 42, shuffle = True)
+es = EarlyStopping(monitor = 'val_acc', patience = 5, mode = 'max', verbose = 0)
+```
         
 ```python
 from tensorflow import keras
